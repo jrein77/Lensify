@@ -1,4 +1,4 @@
-![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/47320a3d-50a7-43ca-97f2-7cb1916b4247)<img src="./AppStoreLogo.png" alt="Lensify App Logo" width="300" height="100">
+<img src="./AppStoreLogo.png" alt="Lensify App Logo" width="300" height="100">
 
 # Lensify
 Lensify is an iOS application that leverages Optical Character Recognition (OCR) and real time audio transcription to capture audiovisual inputs, that can be exported via ShareLink as PDFs. 
@@ -49,7 +49,7 @@ Lensify is an iOS application that leverages Optical Character Recognition (OCR)
 
 ## Multi Mode
 
-![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/27a34d35-70a9-45b5-be04-721a2d14c7d8)
+![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/47320a3d-50a7-43ca-97f2-7cb1916b4247)
 
 1. Click multi mode. 
 2. Everything in audio and visual modes but at the same time.
