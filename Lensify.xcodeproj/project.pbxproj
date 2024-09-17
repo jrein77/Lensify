@@ -7,20 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9AF25A1D2C52B2F60053CD02 /* LensifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25A1C2C52B2F60053CD02 /* LensifyApp.swift */; };
 		9AF25A1F2C52B2F60053CD02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25A1E2C52B2F60053CD02 /* ContentView.swift */; };
-		9AF25A212C52B2F60053CD02 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25A202C52B2F60053CD02 /* Item.swift */; };
 		9AF25A232C52B2FA0053CD02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AF25A222C52B2FA0053CD02 /* Assets.xcassets */; };
 		9AF25A262C52B2FA0053CD02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AF25A252C52B2FA0053CD02 /* Preview Assets.xcassets */; };
+		9AF25A2D2C52B33F0053CD02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25A2C2C52B33F0053CD02 /* AppDelegate.swift */; };
+		9AF25A2F2C52B3600053CD02 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25A2E2C52B3600053CD02 /* ARViewContainer.swift */; };
+		9AF25A312C52B37D0053CD02 /* AutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25A302C52B37D0053CD02 /* AutoScrollView.swift */; };
+		9AF25A332C52B3A00053CD02 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25A322C52B3A00053CD02 /* BlurView.swift */; };
+		9AF25A352C52B3DD0053CD02 /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25A342C52B3DD0053CD02 /* CustomNavBar.swift */; };
+		9AF25A372C52B4080053CD02 /* DocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25A362C52B4080053CD02 /* DocumentView.swift */; };
+		9AF25A392C52B4290053CD02 /* TextCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25A382C52B4290053CD02 /* TextCard.swift */; };
+		9AF25A3B2C52B6380053CD02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF25A3A2C52B6380053CD02 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9AF25A192C52B2F60053CD02 /* Lensify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lensify.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AF25A1C2C52B2F60053CD02 /* LensifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensifyApp.swift; sourceTree = "<group>"; };
 		9AF25A1E2C52B2F60053CD02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9AF25A202C52B2F60053CD02 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9AF25A222C52B2FA0053CD02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AF25A252C52B2FA0053CD02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9AF25A2C2C52B33F0053CD02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AF25A2E2C52B3600053CD02 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		9AF25A302C52B37D0053CD02 /* AutoScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollView.swift; sourceTree = "<group>"; };
+		9AF25A322C52B3A00053CD02 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		9AF25A342C52B3DD0053CD02 /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
+		9AF25A362C52B4080053CD02 /* DocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentView.swift; sourceTree = "<group>"; };
+		9AF25A382C52B4290053CD02 /* TextCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCard.swift; sourceTree = "<group>"; };
+		9AF25A3A2C52B6380053CD02 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +65,15 @@
 		9AF25A1B2C52B2F60053CD02 /* Lensify */ = {
 			isa = PBXGroup;
 			children = (
-				9AF25A1C2C52B2F60053CD02 /* LensifyApp.swift */,
+				9AF25A2C2C52B33F0053CD02 /* AppDelegate.swift */,
+				9AF25A2E2C52B3600053CD02 /* ARViewContainer.swift */,
 				9AF25A1E2C52B2F60053CD02 /* ContentView.swift */,
-				9AF25A202C52B2F60053CD02 /* Item.swift */,
+				9AF25A342C52B3DD0053CD02 /* CustomNavBar.swift */,
+				9AF25A382C52B4290053CD02 /* TextCard.swift */,
+				9AF25A302C52B37D0053CD02 /* AutoScrollView.swift */,
+				9AF25A322C52B3A00053CD02 /* BlurView.swift */,
+				9AF25A3A2C52B6380053CD02 /* LaunchScreen.storyboard */,
+				9AF25A362C52B4080053CD02 /* DocumentView.swift */,
 				9AF25A222C52B2FA0053CD02 /* Assets.xcassets */,
 				9AF25A242C52B2FA0053CD02 /* Preview Content */,
 			);
@@ -128,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF25A3B2C52B6380053CD02 /* LaunchScreen.storyboard in Resources */,
 				9AF25A262C52B2FA0053CD02 /* Preview Assets.xcassets in Resources */,
 				9AF25A232C52B2FA0053CD02 /* Assets.xcassets in Resources */,
 			);
@@ -140,9 +159,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF25A312C52B37D0053CD02 /* AutoScrollView.swift in Sources */,
+				9AF25A332C52B3A00053CD02 /* BlurView.swift in Sources */,
+				9AF25A352C52B3DD0053CD02 /* CustomNavBar.swift in Sources */,
+				9AF25A392C52B4290053CD02 /* TextCard.swift in Sources */,
+				9AF25A2D2C52B33F0053CD02 /* AppDelegate.swift in Sources */,
 				9AF25A1F2C52B2F60053CD02 /* ContentView.swift in Sources */,
-				9AF25A212C52B2F60053CD02 /* Item.swift in Sources */,
-				9AF25A1D2C52B2F60053CD02 /* LensifyApp.swift in Sources */,
+				9AF25A2F2C52B3600053CD02 /* ARViewContainer.swift in Sources */,
+				9AF25A372C52B4080053CD02 /* DocumentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +303,16 @@
 				DEVELOPMENT_TEAM = W4A38YB3D2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Lensify;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Lensify needs access to the camera to scan and analyze visual information.";
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "Lensify needs access to securely store documents locally.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Lensify uses the microphone to transcribe live audio.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Lensify uses speech recognition to convert spoken words into text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -289,8 +320,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SpectacleSystems.Lensify;
+				PRODUCT_BUNDLE_IDENTIFIER = io.spectaclesystems.lensify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,9 +343,16 @@
 				DEVELOPMENT_TEAM = W4A38YB3D2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Lensify;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Lensify needs access to the camera to scan and analyze visual information.";
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "Lensify needs access to securely store documents locally.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Lensify uses the microphone to transcribe live audio.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Lensify uses speech recognition to convert spoken words into text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,8 +360,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SpectacleSystems.Lensify;
+				PRODUCT_BUNDLE_IDENTIFIER = io.spectaclesystems.lensify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
