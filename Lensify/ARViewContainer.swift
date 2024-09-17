@@ -1,7 +1,6 @@
 //
 //  ARViewContainer.swift
 //  Lensify
-//  Property of Spectacle Systems, LLC.
 //
 //  Created by Jake Reinhart on 7/7/24.
 //
@@ -371,7 +370,7 @@ public struct ARViewContainer: UIViewRepresentable {
             let request = VNRecognizeTextRequest { [weak self] request, error in
                 self?.processDetectedText(request: request, error: error)
             }
-            request.recognitionLevel = .accurate // Use accurate recognition for better results
+            request.recognitionLevel = .accurate
             request.usesLanguageCorrection = true
             
             do {
@@ -514,7 +513,7 @@ public class SpeechRecognizer {
     private var onSpeech: ((String, Bool) -> Void)?
     private var fullTranscript: String = ""
     private var restartTimer: Timer?
-    private let restartInterval: TimeInterval = 10 // 10 seconds
+    private let restartInterval: TimeInterval = 10
     
     init() {
         self.speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
@@ -635,7 +634,7 @@ extension ARViewContainer.Coordinator {
             captureDevice.device.videoZoomFactor = newZoomFactor
             captureDevice.device.unlockForConfiguration()
             self.currentZoomFactor = newZoomFactor
-            self.onZoomChange?(newZoomFactor) // Report the zoom change
+            self.onZoomChange?(newZoomFactor)
         } catch {
             print("Error setting zoom: \(error.localizedDescription)")
         }
@@ -647,7 +646,7 @@ extension ARViewContainer.Coordinator {
         if gesture.state == .changed {
             let newZoomFactor = currentZoomFactor * gesture.scale
             updateZoom(newZoomFactor)
-            gesture.scale = 1.0 // Reset the scale
+            gesture.scale = 1.0
         }
     }
 }

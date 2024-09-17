@@ -1,7 +1,6 @@
 //
 //  DocumentView.swift
 //  Lensify
-//  Property of Spectacle Systems, LLC.
 //
 //  Created by Jake Reinhart on 7/7/24.
 //
@@ -170,7 +169,7 @@ struct DocumentView: View {
             size: 0,
             sessionId: sessionId,
             content: "",
-            visualMode: "Visual"  // Default mode
+            visualMode: "Visual"
         )
         
         // Check if a document with this session ID already exists
@@ -228,7 +227,7 @@ struct DocumentView: View {
                         size: Int64(transcript.utf8.count),
                         sessionId: sessionId,
                         content: transcript,
-                        visualMode: "Audio"  // Assuming this is an audio transcript
+                        visualMode: "Audio"
                     )
                     self.documents.append(newDocument)
                 }

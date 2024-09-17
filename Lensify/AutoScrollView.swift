@@ -1,7 +1,6 @@
 //
 //  AutoScrollView.swift
 //  Lensify
-//  Property of Spectacle Systems, LLC.
 //
 //  Created by Jake Reinhart on 7/7/24.
 //

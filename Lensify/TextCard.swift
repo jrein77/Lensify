@@ -1,7 +1,6 @@
 //
 //  TextCard.swift
 //  Lensify
-//  Property of Spectacle Systems, LLC.
 //
 //  Created by Jake Reinhart on 7/7/24.
 //
@@ -301,7 +300,7 @@ struct TextCard: View {
         updateDocument()
     }
     
-    // Add this method to handle iPad sharing
+    // iPad sharing
     private func shareDocumentIPad() {
         let pdfData = generatePDFData()
         let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent("\(docName).pdf")
@@ -322,7 +321,7 @@ struct TextCard: View {
     }
     
     private func generatePDFURL() -> URL {
-        let pdfData = generatePDFData() // This calls the existing PDF generation logic
+        let pdfData = generatePDFData()
         let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent("\(docName).pdf")
         do {
             try pdfData.write(to: tempURL)

@@ -1,7 +1,6 @@
 //
 //  CustomNavBar.swift
 //  Lensify
-//  Property of Spectacle Systems, LLC.
 //
 //  Created by Jake Reinhart on 7/7/24.
 //
@@ -39,9 +38,9 @@ struct CustomNavBar: View {
         let deviceType = UIDevice.current.userInterfaceIdiom
         switch deviceType {
         case .pad:
-            return UIScreen.main.bounds.width * 0.2 // Smaller width for iPad
+            return UIScreen.main.bounds.width * 0.2
         default:
-            return UIScreen.main.bounds.width * 0.5 // Original width for iPhone and other devices
+            return UIScreen.main.bounds.width * 0.5
         }
     }
 }
