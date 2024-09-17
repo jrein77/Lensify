@@ -1,6 +1,6 @@
 # Lensify
 
-Lensify is an innovative iOS application that leverages Optical Character Recognition (OCR) and real time audio transcription to capture audiovisual inputs, that can be exported via ShareLink as PDFs. 
+Lensify is an iOS application that leverages Optical Character Recognition (OCR) and real time audio transcription to capture audiovisual inputs, that can be exported via ShareLink as PDFs. 
 
 ## Features
 
