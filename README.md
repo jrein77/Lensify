@@ -1,4 +1,4 @@
-<img src="./AppStoreLogo.png" alt="Lensify App Logo" width="400" height="100">
+<img src="./AppStoreLogo.png" alt="Lensify App Logo" width="300" height="100">
 
 # Lensify
 Lensify is an iOS application that leverages Optical Character Recognition (OCR) and real time audio transcription to capture audiovisual inputs, that can be exported via ShareLink as PDFs. 
