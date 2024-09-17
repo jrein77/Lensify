@@ -33,15 +33,11 @@ Lensify is an iOS application that leverages Optical Character Recognition (OCR)
 
 ### Visual Mode
 
-![Visual Mode Demo](assets/visual_mode.gif)
-
 1. Launch the app and navigate to Visual mode.
 2. Point device at piece of text for a couple of seconds. 
 3. Image in the text will be visualized in the ui. 
 
 ### Audio Mode
-
-![Audio Mode Demo](assets/audio_mode.gif)
 
 1. Go to the Audio mode.
 2. Start speaking into the mic and transcriptions will appear on screen.
