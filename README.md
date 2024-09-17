@@ -49,10 +49,12 @@ Lensify is an iOS application that leverages Optical Character Recognition (OCR)
 
 ## Multi Mode
 
-![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/47320a3d-50a7-43ca-97f2-7cb1916b4247)
-
 1. Click multi mode. 
 2. Everything in audio and visual modes but at the same time.
+
+## Demo
+![ezgif com-optimize](https://github.com/user-attachments/assets/7dc0b9cd-0b38-4aca-98be-d9484b854151)
+
 
 ## Contributing
 
