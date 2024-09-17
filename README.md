@@ -60,7 +60,7 @@ Multi-mode transcribing a lecture. Visual mode is the first half of the card, au
 
 ## Contributing
 
-We welcome contributions to Lensify! If you have a feature request, bug report, or want to contribute code, please follow these steps:
+I welcome contributions to Lensify! If you have a feature request, bug report, or want to contribute code, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
