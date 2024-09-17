@@ -1,4 +1,4 @@
-![Lensify App Icon](assets/lensify_icon.png)
+![Lensify App Icon](./AppIcon.png)
 
 # Lensify
 
