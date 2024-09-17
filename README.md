@@ -54,6 +54,7 @@ Lensify is an iOS application that leverages Optical Character Recognition (OCR)
 
 ## Demo
 Multi-mode transcribing a lecture. Visual mode is the first half of the card, audio is the second. 
+
 ![ezgif com-optimize](https://github.com/user-attachments/assets/7dc0b9cd-0b38-4aca-98be-d9484b854151)
 
 
