@@ -1,5 +1,4 @@
 <img src="./AppStoreLogo.png" alt="Lensify App Logo" width="300" height="100">
-![AppIcon (1)](https://github.com/user-attachments/assets/05479a3d-a4a9-4940-b431-8517bb65b97d)
 
 
 # Lensify
