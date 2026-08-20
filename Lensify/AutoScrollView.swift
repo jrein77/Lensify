@@ -1,57 +1,51 @@
 //
 //  AutoScrollView.swift
 //  Lensify
+//  Property of Spectacle Systems, LLC.
 //
 //  Created by Jake Reinhart on 7/7/24.
 //
 
 import SwiftUI
-import PDFKit
-import UniformTypeIdentifiers
 
+/// A scroll view that keeps its tail in view as content arrives.
+///
+/// It scrolls to a marker pinned below the content instead of guessing at the
+/// identifier of the last row, so it cannot miss when rows are trimmed.
 struct AutoScrollView<Content: View>: View {
-    let content: Content
-    @Binding var detectedSentences: [DetectedSentence]
-    @Binding var audioTranscripts: [DetectedSentence]
-    let mode: String
-    
-    init(@ViewBuilder content: () -> Content, detectedSentences: Binding<[DetectedSentence]>, audioTranscripts: Binding<[DetectedSentence]>, mode: String) {
-        self.content = content()
-        self._detectedSentences = detectedSentences
-        self._audioTranscripts = audioTranscripts
-        self.mode = mode
+    private let bottomId = "auto-scroll-bottom"
+
+    let trigger: String
+    let animated: Bool
+    @ViewBuilder let content: () -> Content
+
+    init(trigger: String, animated: Bool = true, @ViewBuilder content: @escaping () -> Content) {
+        self.trigger = trigger
+        self.animated = animated
+        self.content = content
     }
-    
+
     var body: some View {
-        ScrollViewReader { scrollView in
+        ScrollViewReader { proxy in
             ScrollView {
-                content
+                content()
+                Color.clear
+                    .frame(height: 1)
+                    .id(bottomId)
             }
-            .onChange(of: detectedSentences) { oldValue, newValue in
-                if mode == "Visual" || mode == "Multi" {
-                    scrollToBottom(scrollView: scrollView, id: "visual_\(newValue.count - 1)")
-                }
-            }
-            .onChange(of: audioTranscripts) { oldValue, newValue in
-                if mode == "Audio" || mode == "Multi" {
-                    scrollToBottom(scrollView: scrollView, id: "audio_\(newValue.count - 1)")
-                }
-            }
-            .onReceive(NotificationCenter.default.publisher(for: .init("AudioTranscriptUpdated"))) { _ in
-                // Trigger autoscroll for audio content here
-                if mode == "Audio" || mode == "Multi" {
-                    scrollToBottom(scrollView: scrollView, id: "audio_\(audioTranscripts.count - 1)")
-                }
+            .onChange(of: trigger) { _, _ in
+                scrollToBottom(proxy)
             }
         }
     }
 
-    private func scrollToBottom(scrollView: ScrollViewProxy, id: String) {
-        DispatchQueue.main.async {
-            withAnimation {
-                scrollView.scrollTo(id, anchor: .bottom)
-            }
+    private func scrollToBottom(_ proxy: ScrollViewProxy) {
+        guard animated else {
+            proxy.scrollTo(bottomId, anchor: .bottom)
+            return
+        }
+        withAnimation(.easeOut(duration: 0.2)) {
+            proxy.scrollTo(bottomId, anchor: .bottom)
         }
     }
 }
-

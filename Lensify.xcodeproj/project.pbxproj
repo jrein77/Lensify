@@ -18,6 +18,12 @@
 		9AF25A372C52B4080053CD02 /* DocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25A362C52B4080053CD02 /* DocumentView.swift */; };
 		9AF25A392C52B4290053CD02 /* TextCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25A382C52B4290053CD02 /* TextCard.swift */; };
 		9AF25A3B2C52B6380053CD02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF25A3A2C52B6380053CD02 /* LaunchScreen.storyboard */; };
+		9AF25B47B7BE051DF366DACD /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25B6ADAA862AE5897AC1D /* SessionStore.swift */; };
+		9AF25B4DC906F3B090D57494 /* SpeechTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25B49C8B63ADF8710C792 /* SpeechTranscriber.swift */; };
+		9AF25BB42A286BF256D6EBA2 /* TextScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25B51C7C08A4F51AC4E58 /* TextScanner.swift */; };
+		9AF25BD98348A2A06E8129F5 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25B1B587606E22B25082A /* ContentViewModel.swift */; };
+		9AF25BC7D6377B0BBA5DA8DB /* DocumentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25B83EA0C18A77DB828AE /* DocumentStore.swift */; };
+		9AF25B44F3E9CEFED2C8AC1F /* PDFComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF25B4C62A44EECCF3CB702 /* PDFComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,12 @@
 		9AF25A362C52B4080053CD02 /* DocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentView.swift; sourceTree = "<group>"; };
 		9AF25A382C52B4290053CD02 /* TextCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCard.swift; sourceTree = "<group>"; };
 		9AF25A3A2C52B6380053CD02 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AF25B6ADAA862AE5897AC1D /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		9AF25B49C8B63ADF8710C792 /* SpeechTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTranscriber.swift; sourceTree = "<group>"; };
+		9AF25B51C7C08A4F51AC4E58 /* TextScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextScanner.swift; sourceTree = "<group>"; };
+		9AF25B1B587606E22B25082A /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		9AF25B83EA0C18A77DB828AE /* DocumentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentStore.swift; sourceTree = "<group>"; };
+		9AF25B4C62A44EECCF3CB702 /* PDFComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,12 @@
 			isa = PBXGroup;
 			children = (
 				9AF25A2C2C52B33F0053CD02 /* AppDelegate.swift */,
+				9AF25B6ADAA862AE5897AC1D /* SessionStore.swift */,
+				9AF25B49C8B63ADF8710C792 /* SpeechTranscriber.swift */,
+				9AF25B51C7C08A4F51AC4E58 /* TextScanner.swift */,
+				9AF25B1B587606E22B25082A /* ContentViewModel.swift */,
+				9AF25B83EA0C18A77DB828AE /* DocumentStore.swift */,
+				9AF25B4C62A44EECCF3CB702 /* PDFComposer.swift */,
 				9AF25A2E2C52B3600053CD02 /* ARViewContainer.swift */,
 				9AF25A1E2C52B2F60053CD02 /* ContentView.swift */,
 				9AF25A342C52B3DD0053CD02 /* CustomNavBar.swift */,
@@ -160,6 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF25A312C52B37D0053CD02 /* AutoScrollView.swift in Sources */,
+				9AF25B47B7BE051DF366DACD /* SessionStore.swift in Sources */,
+				9AF25B4DC906F3B090D57494 /* SpeechTranscriber.swift in Sources */,
+				9AF25BB42A286BF256D6EBA2 /* TextScanner.swift in Sources */,
+				9AF25BD98348A2A06E8129F5 /* ContentViewModel.swift in Sources */,
+				9AF25BC7D6377B0BBA5DA8DB /* DocumentStore.swift in Sources */,
+				9AF25B44F3E9CEFED2C8AC1F /* PDFComposer.swift in Sources */,
 				9AF25A332C52B3A00053CD02 /* BlurView.swift in Sources */,
 				9AF25A352C52B3DD0053CD02 /* CustomNavBar.swift in Sources */,
 				9AF25A392C52B4290053CD02 /* TextCard.swift in Sources */,
@@ -298,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lensify/Preview Content\"";
 				DEVELOPMENT_TEAM = W4A38YB3D2;
 				ENABLE_PREVIEWS = YES;
@@ -319,7 +343,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.spectaclesystems.lensify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -338,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lensify/Preview Content\"";
 				DEVELOPMENT_TEAM = W4A38YB3D2;
 				ENABLE_PREVIEWS = YES;
@@ -359,7 +383,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.spectaclesystems.lensify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
